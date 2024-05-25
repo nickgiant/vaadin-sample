@@ -3,6 +3,13 @@
 This project can be used as a starting point to create your own Vaadin application with Spring Boot.
 It contains all the necessary configuration and some placeholder files to get you started.
 
+## First steps
+
+You can edit the classes described below (add or delete or rearrange the layout) in order to gain some confidence working with Vaadin.
+- Inside src/main/java/com/example/application/views in class MainLayout exists the menu in createNavigation function. If you would like to add more pages you have to add a new SideNavItem object in SideNav and create a new class like for example HelloWorldView which extends VerticalLayout.
+- Inside src/main/java/com/example/application/views/helloworld/ in class HelloWorldView you can see that there is a VerticalLayout (HelloWorldView extends VerticalLayout) and inside it two HorizontalLayout's. Eeach one of them has TextField and Button's. As you can see in line 43 you can add a click listener and perform database operations by calling the related class (line 44 , line 59).
+- A very handy Vaading component is Notification with which you can directly show shom information to the user (lines 45, 60).
+
 ## Running the application
 
 The project is a standard Maven project. To run it from the command line,
